@@ -8,5 +8,13 @@ After cloning the repository and creating your main file include `libft.h` in it
 
 ```bash
 make
-cc main.c -Iinc libft.a -o main
+cc my_program.c -L. -lft -o my_program
+```
+
+### Additional make rules
+
+```bash
+make clean    # cleanup object files
+make fclean   # cleanup all output files
+make re       # clean all output files and run make again
 ```
