@@ -20,7 +20,7 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	ar rcs $(NAME) $(OBJ)
 
-$(OBJ): $(SRC)
+obj/%.o: src/%.c
 	mkdir -p $(dir $@)
 	$(CC) $(CFLAGS) -c $< -o $@
 
@@ -29,6 +29,6 @@ clean:
 
 fclean: clean
 	rm -f $(NAME)
-	rmdir obj
+	rm -rf obj
 
 re: fclean $(NAME)
