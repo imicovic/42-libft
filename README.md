@@ -18,3 +18,4 @@ make clean    # cleanup object files
 make fclean   # cleanup all output files
 make re       # clean all output files and run make again
 ```
+The project resulted in a solid understanding of C language fundamentals, manual memory management and linked lists. It also introduced me to tools such as `GDB` and `Valgrind`.
